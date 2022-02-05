@@ -19,9 +19,9 @@ export default function Home({data}) {
         ))}
         </div>
         
-        <div className="my-20">
+        <div className="mt-20 mb-40">
           <hr />
-          <div className="mt-4 Blogs text-5xl font-semibold py-4">Blogs.</div>
+          <div className="mt-4 Blogs text-5xl font-semibold py-4">Posts.</div>
           <div className=" columns-3">
             {data?.posts.map((post,index) => (
               <Post key={index} post={post}/>
