@@ -11,14 +11,15 @@ export const Header = () => {
               </Link>
               
               <div className="flex">
-                <div className=" ml-4">
-                    <Link href={"/posts"} passHref>
-                        <div className='font-semibold tracking-wider transition cursor-pointer hover:text-red-600 '>Posts</div>
-                    </Link>
-                </div>
+                
                 <div className="ml-4">
                     <Link href={"/portfolios"} passHref>
                         <div className='font-semibold tracking-wider transition cursor-pointer  hover:text-red-600 '>Portfolios</div>
+                    </Link>
+                </div>
+                <div className=" ml-4">
+                    <Link href={"/posts"} passHref>
+                        <div className='font-semibold tracking-wider transition cursor-pointer hover:text-red-600 '>Posts</div>
                     </Link>
                 </div>
               </div>

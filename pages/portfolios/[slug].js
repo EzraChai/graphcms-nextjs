@@ -25,11 +25,11 @@ const Portfolio = ({portfolio,content}) => {
         </div>
             </div>
           <div className="p-10">
-            <div className="text-lg text-zinc-700 pb-2">
+            <div className="text-lg text-zinc-700 px-8 pb-2">
                 - {portfolio.description}
             </div>
-              <div className="text-2xl underline font-bold pt-4">Content</div>
-            <div className="prose pt-1 pb-4 prose-xl prose-img:rounded-xl prose-headings:font-bold prose-headings:text-red-600 prose-a:text-red-600" dangerouslySetInnerHTML={{__html: converter.makeHtml(content)}}/>
+              <div className="text-2xl underline px-8 font-bold pt-4">Content</div>
+            <div className="prose pt-1 pb-4 mx-auto prose-2xl prose-img:rounded-xl prose-headings:font-bold prose-headings:text-red-600 prose-a:text-red-600" dangerouslySetInnerHTML={{__html: converter.makeHtml(content)}}/>
           </div>
         
       </div>

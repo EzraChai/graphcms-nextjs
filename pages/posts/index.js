@@ -10,7 +10,7 @@ const Posts = ({data}) => {
 
           <div className="my-10">
           <div className="max-w-[1200px] mx-auto">
-              <div className="mt-4 Blogs text-5xl font-semibold py-4">Posts.</div>
+              <div className="mt-4 Blogs text-5xl uppercase font-extrabold py-4">Posts.</div>
               {/* <hr /> */}
             <div className="mt-10">
                 {data?.posts.map((post,index) => (
