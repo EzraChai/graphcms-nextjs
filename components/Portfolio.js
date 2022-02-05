@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Portfolio = ({portfolio}) => {
   return <Link href={`/portfolios/${portfolio.slug}`} passHref>
-  <div className="card shadow-lg hover:shadow-md transition-all rounded-lg cursor-pointer overflow-hidden">
+  <div className="card shadow-lg hover:shadow-md mb-4 transition-all rounded-lg cursor-pointer overflow-hidden">
       <div className="relative">
         <div className="absolute bg-black w-full h-full z-[1] opacity-0 transition-opacity hover:opacity-30"></div>
           <Image layout="responsive" src={portfolio.coverImage.url} width={portfolio.coverImage.width} height={portfolio.coverImage.height} alt={portfolio.title}></Image>

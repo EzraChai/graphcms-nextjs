@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { getPosts } from "../../lib/data";
-import Link from "next/link";
 import { Post } from "../../components/Post";
 
 const Posts = ({data}) => {
