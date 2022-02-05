@@ -1,6 +1,7 @@
 import { getPortfolio } from "../../lib/data";
 import Image from "next/image";
 import he from "he"
+import Head from "next/head";
 import showdown from "showdown";
 
 
@@ -9,6 +10,9 @@ const Portfolio = ({portfolio,content}) => {
     let converter = new showdown.Converter()
 
   return (<div className="max-w-[1200px] mt-4 mx-auto mb-40 px-10">
+      <Head>
+          <title>{portfolio.title}</title>
+      </Head>
       <div className="rounded-lg relative overflow-hidden shadow-lg">
           <div className="w-[100%] relative">
                 <div className="absolute bg-black w-full h-full z-[1] opacity-50"></div>

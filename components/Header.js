@@ -10,9 +10,8 @@ export const Header = () => {
                 </h1>
               </Link>
               
-              <div className="flex">
-                
-                <div className="ml-4">
+              <div className="flex uppercase">
+                <div className="ml-4 ">
                     <Link href={"/portfolios"} passHref>
                         <div className='font-semibold tracking-wider transition cursor-pointer  hover:text-red-600 '>Portfolios</div>
                     </Link>

@@ -15,7 +15,7 @@ const Post = ({post,content}) => {
       <title>{post.title}</title>
     </Head>
       <div className="">
-        <div className="text-4xl py-4 font-extrabold">
+        <div className="text-6xl py-4 font-extrabold">
           {post.title}
         </div>
         <div className="tags flex items-center">

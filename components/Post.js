@@ -5,7 +5,7 @@ export const Post = ({post}) => {
                 <div className="mb-10" >
                     <Link href={`/posts/${post.slug}`} passHref>
                       <div className="flex cursor-pointer justify-between">
-                            <div className="text-5xl font-semibold">{post.title}</div>
+                            <div className="text-5xl font-bold">{post.title}</div>
                         <div className="">{new Date(post.date).toDateString()}</div>
                       </div>
                     </Link>
