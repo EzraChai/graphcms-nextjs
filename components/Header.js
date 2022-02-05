@@ -6,7 +6,8 @@ export const Header = () => {
           <div className="max-w-[1200px] mx-auto py-6 flex justify-between items-center">
               <Link href={"/"} passHref>
                 <h1 className="text-3xl uppercase font-extrabold text-red-600 cursor-pointer">
-                    Portfolio.
+                    {/* <span className="text-zinc-800">E</span>zra<span className="text-zinc-800">C</span>hai. */}
+                    PORTFOLIOS.
                 </h1>
               </Link>
               
