@@ -1,5 +1,6 @@
 import { getPost } from "../../lib/data";
 import Image from "next/image";
+import Head from "next/head";
 import he from "he"
 import showdown from "showdown";
 
@@ -10,6 +11,9 @@ const Post = ({post,content}) => {
     let converter = new showdown.Converter()
 
   return (<div className="max-w-[1200px] mx-auto py-10">
+    <Head>
+      <title>{post.title}</title>
+    </Head>
       <div className="">
         <div className="text-4xl py-4 font-extrabold">
           {post.title}
