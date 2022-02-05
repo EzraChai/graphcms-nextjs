@@ -22,7 +22,7 @@ const Portfolio = ({portfolio,content}) => {
                     <div className="tracking-wide">
                         {portfolio.title}
                     </div>
-                    <div className="tags flex items-center mt-4">
+                    <div className="tags flex items-center mt-6">
           {portfolio.tags.map((tag, index) => (
             <div key={index} className="bg-red-600 text-white px-2 py-1 font-bold uppercase text-xs rounded-md mr-2 mb-4 hover:bg-zinc-800 transition">{tag}</div>
           ))}
