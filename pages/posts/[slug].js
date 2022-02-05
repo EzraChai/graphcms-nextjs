@@ -9,7 +9,7 @@ const Post = ({post,content}) => {
 
     let converter = new showdown.Converter()
 
-  return (<div className="max-w-[1200px] mx-auto py-20">
+  return (<div className="max-w-[1200px] mx-auto py-10">
       <div className="">
         <div className="text-4xl py-4 font-extrabold">
           {post.title}
