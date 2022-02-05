@@ -12,7 +12,7 @@ export default function Home({data}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='max-w-[1200px] mx-auto'>
-        <div className="mt-10 Blogs text-5xl font-semibold py-4">Portfolios.</div>
+        <div className="mt-10 Portfolios text-5xl uppercase font-extrabold  py-4">Portfolios.</div>
         <div className="columns-3">
           {data?.portfolios.map((portfolio,index) => (
           <Portfolio key={index} portfolio={portfolio}/>
@@ -20,16 +20,13 @@ export default function Home({data}) {
         </div>
         
         <div className="mt-20 mb-40">
-          <hr />
-          <div className="mt-4 Blogs text-5xl font-semibold py-4">Posts.</div>
-          <div className=" columns-3">
+          <div className="mt-4 Blogs text-5xl uppercase font-extrabold py-4 ">Posts.</div>
+          <div className="">
             {data?.posts.map((post,index) => (
               <Post key={index} post={post}/>
             ))}
           </div>
         </div>
-        
-        
       </main>
     </div>
   )

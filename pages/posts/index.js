@@ -1,6 +1,7 @@
 import Head from "next/head";
-import { Post } from "../../components/Post";
 import { getPosts } from "../../lib/data";
+import Link from "next/link";
+import { Post } from "../../components/Post";
 
 const Posts = ({data}) => {
   return <div>
@@ -8,16 +9,16 @@ const Posts = ({data}) => {
           <title>Posts</title>
       </Head>
 
-          <div className="my-20">
+          <div className="my-10">
           <div className="max-w-[1200px] mx-auto">
               <div className="mt-4 Blogs text-5xl font-semibold py-4">Posts.</div>
-            <div className=" columns-3">
+              {/* <hr /> */}
+            <div className="mt-10">
                 {data?.posts.map((post,index) => (
-                <Post key={index} post={post}/>
+                <Post post={post} key={index}/>
                 ))}
             </div>
           </div>
-          
         </div>
   </div>;
 };
