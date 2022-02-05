@@ -7,7 +7,7 @@ export const Header = () => {
               <Link href={"/"} passHref>
                 <h1 className="text-3xl uppercase font-extrabold text-red-600 cursor-pointer">
                     {/* <span className="text-zinc-800">E</span>zra<span className="text-zinc-800">C</span>hai. */}
-                    PORTFOLIOS.
+                    PORTFOLIO.
                 </h1>
               </Link>
               
