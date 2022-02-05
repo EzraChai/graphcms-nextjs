@@ -34,7 +34,7 @@ export default function Home({data}) {
 
 
 
-export const getServerSideProps = async (ctx) => {
+export const getServerSideProps = async () => {
 
   const data = await getPostAndPortfolios()
 

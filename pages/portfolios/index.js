@@ -3,7 +3,6 @@ import { getPortfolios } from "../../lib/data";
 import { Portfolio } from "../../components/Portfolio";
 
 const Portfolios = ({data}) => {
-    console.log(data);
   return <div>
       <Head>
           <title>Portfolios</title>
