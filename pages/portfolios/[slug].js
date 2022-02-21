@@ -43,7 +43,7 @@ const Portfolio = ({portfolio,content}) => {
 export default Portfolio;
 
 export const getServerSideProps = async ({params}) => {
-    const { portfolio } = await  getPortfolio(params.slug)
+    const { portfolio } = await getPortfolio(params.slug)
 
     return {
         props: {

@@ -22,6 +22,11 @@ export const Header = () => {
                         <div className='font-semibold tracking-wider transition cursor-pointer hover:text-red-600 '>Posts</div>
                     </Link>
                 </div>
+                <div className=" ml-4">
+                    <Link href={"/galleries"} passHref>
+                        <div className='font-semibold tracking-wider transition cursor-pointer hover:text-red-600 '>Gallery</div>
+                    </Link>
+                </div>
               </div>
           </div>
           <hr />
