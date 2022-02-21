@@ -6,13 +6,10 @@ import { getPlaiceholder } from "plaiceholder";
 const getBlurredImage = async (galleries) => {
   return await Promise.all(
     galleries.map(async image => {
-      // const {base64, img} = await getPlaiceholder(image.photo.url, {size: 10});
+      const {base64, img} = await getPlaiceholder(image.photo.url, {size: 10});
       return {
-        // ...img,
-        // base64,
-        src: image.photo.url,
-        width: image.photo.width,
-        height:image.photo.height,
+        ...img,
+        base64,
         id: image.id,
         description: image.description,
         date: image.date,
@@ -30,6 +27,7 @@ export default function Gallery({images}) {
           </Head>
           <div className="my-10">
             <div className="max-w-[1200px] mx-auto">
+              <div className="mt-10 Portfolios text-5xl uppercase font-extrabold  py-4">Gallery.</div>
               <Galleries galleries={images}></Galleries>
             </div>
           </div>

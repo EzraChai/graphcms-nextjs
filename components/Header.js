@@ -6,7 +6,6 @@ export const Header = () => {
           <div className="max-w-[1200px] mx-auto py-6 flex justify-between items-center">
               <Link href={"/"} passHref>
                 <h1 className="text-3xl uppercase font-extrabold text-red-600 cursor-pointer">
-                    {/* <span className="text-zinc-800">E</span>zra<span className="text-zinc-800">C</span>hai. */}
                     PORTFOLIO.
                 </h1>
               </Link>
@@ -17,13 +16,13 @@ export const Header = () => {
                         <div className='font-semibold tracking-wider transition cursor-pointer  hover:text-red-600 '>Portfolios</div>
                     </Link>
                 </div>
-                <div className=" ml-4">
+                <div className=" ml-6">
                     <Link href={"/posts"} passHref>
                         <div className='font-semibold tracking-wider transition cursor-pointer hover:text-red-600 '>Posts</div>
                     </Link>
                 </div>
-                <div className=" ml-4">
-                    <Link href={"/galleries"} passHref>
+                <div className=" ml-6">
+                    <Link href={"/gallery"} passHref>
                         <div className='font-semibold tracking-wider transition cursor-pointer hover:text-red-600 '>Gallery</div>
                     </Link>
                 </div>
