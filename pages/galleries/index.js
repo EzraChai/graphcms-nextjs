@@ -6,10 +6,13 @@ import { getPlaiceholder } from "plaiceholder";
 const getBlurredImage = async (galleries) => {
   return await Promise.all(
     galleries.map(async image => {
-      const {base64, img} = await getPlaiceholder(image.photo.url, {size: 10});
+      // const {base64, img} = await getPlaiceholder(image.photo.url, {size: 10});
       return {
-        ...img,
-        base64,
+        // ...img,
+        // base64,
+        src: image.photo.url,
+        width: image.photo.width,
+        height:image.photo.height,
         id: image.id,
         description: image.description,
         date: image.date,
