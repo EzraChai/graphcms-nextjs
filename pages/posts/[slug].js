@@ -1,6 +1,7 @@
 import { getPost } from "../../lib/data";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link"
 import he from "he"
 import showdown from "showdown";
 
@@ -54,7 +55,9 @@ const Post = ({post,content}) => {
         <Image className="rounded-full" src={post.author.image.url} width={post.author.image.width} height={post.author.image.height} alt={post.author.name}></Image>
       </div>
       <div className="px-10">
-        <div className="name text-2xl font-bold">{post.author.name}</div>
+        <div className="name text-2xl hover:underline font-bold">
+          <Link href={`/authors/${post.author.slug}`}>{post.author.name}</Link>
+        </div>
         <div className="bio mt-2 text-gray-600">{post.author.biography}</div>
       </div>
     </div>
@@ -65,7 +68,7 @@ const Post = ({post,content}) => {
 export default Post;
 
 export const getServerSideProps = async ({params}) => {
-    const { post } = await  getPost(params.slug)
+    const { post } = await getPost(params.slug)
 
     return {
         props: {

@@ -1,6 +1,7 @@
 module.exports = {
   reactStrictMode: true,
+  swcMinify: true,
     images: {
-    domains: ['media.graphcms.com'],
+    domains: ['media.graphassets.com'],
   },
 }

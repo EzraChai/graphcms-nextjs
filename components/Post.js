@@ -16,7 +16,9 @@ export const Post = ({post}) => {
                         <div className="text-lg text-zinc-700 cursor-pointer">{post.description}</div>
                     </Link>
                     <div className="flex">
-                        <div className="underline rounded-3xl mt-4 py-1 font-bold uppercase text-xs mb-4">{post.author.name}</div>
+                        <Link href={`/authors/${post.author.slug}`} passHref>
+                            <div className="underline rounded-3xl cursor-pointer mt-4 py-1 font-bold uppercase text-xs mb-4">{post.author.name}</div>
+                        </Link>
                     </div>
                     <hr />
                 </div>
